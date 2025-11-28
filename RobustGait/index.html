@@ -104,26 +104,28 @@
 
     <!-- Authors -->
     <div class="authors">
-        Reeshoon Sayera<sup>1</sup>,
-        A. Kumar<sup>1</sup>,
-        S. Mitra<sup>1</sup>,
-        P. Kamtam<sup>1</sup>
+        Reeshoon Sayera,
+        Akash Kumar,
+        Sirshapan Mitra,
+        Prudvi Kamtam,
+        Yogesh S Rawat
     </div>
 
     <!-- Affiliation -->
-    <div class="affiliation">1 University of Central Florida</div>
+    <div class="affiliation"> University of Central Florida</div>
 
     <!-- Conference -->
     <div class="conference">WACV 2026</div>
 
     <!-- Buttons -->
     <div class="button-row">
-        <a class="button" href="#" target="_blank">📄 Paper</a>
-        <a class="button" href="#" target="_blank">📝 arXiv</a>
+        <a class="button" href="" target="_blank">📄 Paper</a>
+        <a class="button" href="https://arxiv.org/abs/1610.09816" target="_blank">📝 arXiv</a>
         <a class="button" href="https://github.com/Reeshoon/RobustGait" target="_blank">💻 Code</a>
-        <a class="button" href="#" target="_blank">📑 Slides</a>
-        <a class="button" href="#" target="_blank">🖼️ Poster</a>
+        <!-- <a class="button" href="#" target="_blank">📑 Slides</a>
+        <a class="button" href="#" target="_blank">🖼️ Poster</a> -->
     </div>
+    
 
     <!-- Placeholder Hero Figure -->
     <div class="placeholder">Main Figure Placeholder</div>
@@ -131,14 +133,17 @@
     <!-- Abstract -->
     <h2>Abstract</h2>
     <p>
-        Appearance-based gait recognition has shown impressive performance on controlled datasets, 
-        yet robustness under real-world corruptions remains significantly underexplored. RobustGait 
-        provides a comprehensive robustness benchmark evaluating six state-of-the-art gait 
-        recognition architectures under 15 corruption types across five severity levels. Additionally, 
-        we analyze the impact of silhouette segmentation and human parsing on downstream 
-        recognition accuracy.
-        <br><br>
-        <strong>Code:</strong> https://github.com/Reeshoon/RobustGait
+        Appearance-based gait recognition have achieved strong performance on controlled datasets, yet systematic evaluation of its robustness to 
+        real-world corruptions and silhouette variability remains lacking. We present RobustGait, a framework for fine-grained robustness evaluation 
+        of appearance-based gait recognition systems. RobustGait evaluation spans four dimensions: the type of perturbation (digital, environmental, 
+        temporal, occlusion), the silhouette extraction method (segmentation and parsing networks), the architectural capacities of gait recognition models, 
+        and various deployment scenarios. The benchmark introduces 15 corruption types at 5 severity levels across CASIA-B, CCPG, and SUSTech1K, 
+        with in-the-wild validation on MEVID, and evaluates six state-of-the-art gait systems. We came across several exciting insights. 
+        First, applying noise at the RGB level better reflects real-world degradation, and reveal how distortions propagate through silhouette extraction to 
+        the downstream gait recognition systems. Second, gait accuracy is highly sensitive to silhouette extractor biases, revealing an overlooked source of benchmark bias. 
+        Third, robustness is dependent on both the type of perturbation and the architectural design. Finally, we explore robustness-enhancing strategies, showing that noise-aware
+         training and knowledge distillation improve performance and move toward deployment-ready systems.
+        
     </p>
 
     <!-- Method Overview -->
